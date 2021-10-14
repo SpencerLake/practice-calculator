@@ -1,0 +1,261 @@
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#calculator {
+    height: 70vh;
+    width: 25vw;
+    background-color: darkgray;
+    border-radius: 15px;
+}
+
+
+/* Display Section */
+
+.display {
+    width: 100%;
+    height: 20%;
+    color: white;
+    background: black;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+
+
+    .cur-answer {
+        font-size: 2vw;
+        margin-right: 2vw;
+        height: 60%;
+        vertical-align: middle;
+    }
+
+    .prev-answer {
+        font-size: 1vw;
+        max-width: 90%;
+        height: 40%;
+        margin-right: 2vw;
+        padding-top: .5vh;
+        vertical-align: middle;
+    }
+}
+
+
+/* Buttons Section */
+
+button {
+    background-color: white;
+    border: none;
+    transition-duration: .1s;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    font-weight: 600;
+    font-size: 4vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+button:active {
+    background-color: black;
+    color: darkgray;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 4;
+    grid-template-rows: 5;
+    gap: 10px;
+    height: 80%;
+    
+
+
+    .all-clear {
+        text-align: center;
+        grid-column: 1;
+        grid-row: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .plus-minus {
+        text-align: center;
+        grid-column: 2;
+        grid-row: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .empty {
+        text-align: center;
+        grid-column: 3;
+        grid-row: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .divide {
+        text-align: center;
+        grid-column: 4;
+        grid-row: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .multiply {
+        text-align: center;
+        grid-column: 4;
+        grid-row: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .subtract {
+        text-align: center;
+        grid-column: 4;
+        grid-row: 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .add {
+        text-align: center;
+        grid-column: 4;
+        grid-row: 4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .equals {
+        text-align: center;
+        grid-column: 4;
+        grid-row: 5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dot {
+        text-align: center;
+        grid-column: 3;
+        grid-row: 5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .zero {
+        text-align: center;
+        grid-column: 1/3;
+        grid-row: 5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        #zero {
+            width: 73%;
+            border-radius: 80px;
+        }
+    }
+
+    .one {
+        text-align: center;
+        grid-column: 1;
+        grid-row: 4;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+
+    .two {
+        text-align: center;
+        grid-column: 2;
+        grid-row: 4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .three {
+        text-align: center;
+        grid-column: 3;
+        grid-row: 4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .four {
+        text-align: center;
+        grid-column: 1;
+        grid-row: 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .five {
+        text-align: center;
+        grid-column: 2;
+        grid-row: 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .six {
+        text-align: center;
+        grid-column: 3;
+        grid-row: 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .seven {
+        text-align: center;
+        grid-column: 1;
+        grid-row: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .eight {
+        text-align: center;
+        grid-column: 2;
+        grid-row: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nine {
+        text-align: center;
+        grid-column: 3;
+        grid-row: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
